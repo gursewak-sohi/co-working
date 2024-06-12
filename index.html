@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.svg" />
+    <title>Creators Co-working</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body class="antialiased text-gray-950 tracking-tight">
+
+    <header>
+        <nav x-data="{isOpen: false}" class="mx-auto h-auto w-full lg:sticky top-0 z-20 bg-white">
+            <div class="flex flex-col px-6 py-5 lg:flex-row lg:items-center lg:justify-between lg:px-10 lg:py-4 xl:px-20">
+              <a href="index.html" class="w-1/2 md:w-auto xl:w-[288px]">
+                <span class="font-extrabold text-2xl tracking-tighter">Logo.</span>
+              </a>
+              <div :class="isOpen ? 'flex' : 'hidden'" class="mt-8 flex-col space-y-8 lg:mt-0 lg:flex lg:flex-row lg:space-x-2 lg:space-y-0 font-semibold text-[15px]">
+                <a href="#about" class="rounded-full duration-200 hover:bg-gray-100 hover:text-pink-600 lg:px-4 lg:py-2.5">About Us</a>
+                <a href="#spaces" class="rounded-full duration-200 hover:bg-gray-100 hover:text-pink-600 lg:px-4 lg:py-2.5">Spaces</a>
+                <a href="#prices" class="rounded-full duration-200 hover:bg-gray-100 hover:text-pink-600 lg:px-4 lg:py-2.5">Prices</a>
+                <a href="#contact" class="rounded-full duration-200 hover:bg-gray-100 hover:text-pink-600 lg:px-4 lg:py-2.5">Contact</a>
+              </div>
+              <div :class="isOpen ? 'flex' : 'hidden'" class="flex flex-col space-y-4 lg:flex lg:flex-row lg:space-x-3 lg:space-y-0 mt-8 lg:mt-0">
+                <a href="javascript:;" class="inline-block rounded-full bg-gray-100 px-5 py-2.5 text-center text-[15px] font-semibold text-gray-950 duration-200  hover:bg-gray-300">Become Member</a>
+                <a href="javascript:;" class="inline-block rounded-full bg-pink-600 px-5 py-2.5 text-center text-[15px] font-semibold text-white duration-200 hover:bg-pink-500">Book Space</a>
+              </div>
+              <a href="#" x-on:click.prevent="isOpen = !isOpen" class="absolute p-2 right-5 lg:hidden">
+                <svg width="1.25rem" height="1rem" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 7H1C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9H19C19.5523 9 20 8.55228 20 8C20 7.44772 19.5523 7 19 7Z" fill="currentColor"></path>
+                  <path d="M19 0H7C6.44772 0 6 0.447715 6 1C6 1.55228 6.44772 2 7 2H19C19.5523 2 20 1.55228 20 1C20 0.447715 19.5523 0 19 0Z" fill="currentColor"></path>
+                  <path d="M19 14H11C10.4477 14 10 14.4477 10 15C10 15.5523 10.4477 16 11 16H19C19.5523 16 20 15.5523 20 15C20 14.4477 19.5523 14 19 14Z" fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="relative isolate h-[calc(100vh-240px)] overflow-clip bg-gray-900 py-4">
+        <video muted autoplay="" loop="" playsinline="" class="absolute inset-0 h-full w-full object-cover opacity-35">
+            <source src="assets/videos/hero.webm" type="video/webm">
+            <source src="assets/videos/hero.mp4" type="video/mp4">
+        </video>
+        <div class="mx-auto flex flex-col items-center justify-center h-full max-w-3xl">
+            <div class="isolate flex flex-col px-6 text-center text-white opacity-100">
+            <h2 class="mb-6 text-4xl font-bold tracking-tighter text-white md:text-6xl">Welcome to Creators <br> Co-working Team Office</h2>
+            <div class="mx-auto max-w-[528px] mb-6 lg:mb-8  md:text-lg">
+                Located on the iconic Chapel Street in Prahran. Common Spaces is meticulously designed for creative teams, offering everything you need to thrive
+            </div>
+            <div>
+                <a href="javascript:;" class="inline-block rounded-full bg-pink-600 px-8 py-4 text-center font-bold text-white transition hover:bg-pink-500">Book Space</a>
+            </div>
+            </div>
+        </div>
+    </section>  
+
+    <section id="about" class="py-12 md:py-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="flex flex-col items-center text-center gap-6 md:gap-8">
+                <h2 class="font-bold text-3xl md:text-4xl tracking-tighter">About us</h2>
+                <p class="text-xl md:text-2xl md:leading-9 font-medium text-gray-600">Welcome to the Creators Co-working Team Office, located on the iconic Chapel Street in Prahran. Common Spaces is meticulously designed for creative teams, offering everything you need to thrive. From our sound-treated podcast room and two versatile boardrooms to a media lounge equipped with an 85" screen and surround sound audio, we have it all. Enjoy a coffee at our stylish bar while taking in the best views Chapel Street has to offer. This space is perfect for teams of 10-25 who gather once a week, providing a complete and inspiring solution. Join us and elevate your collaborative efforts in a space designed for innovation and creativity.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col items-center text-center gap-2 md:gap-3 mb-8 md:mb-10">
+                <h2 class="font-bold text-3xl md:text-4xl tracking-tighter">Explore 3D View</h2>
+                <p class="font-medium text-gray-600 text-base md:text-lg">Navigate the Virtual Landscape
+                </p>
+            </div>
+            <div class="flex justify-center">
+                <iframe class="rounded-3xl" width='976' height='549' src='https://my.matterport.com/show/?m=LYJDSXDUqUk&brand=0' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
+            </div>   
+    </section>
+
+    <section id="spaces" class="py-12 md:py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col items-center text-center gap-2 md:gap-3 mb-8 md:mb-10">
+                <h2 class="font-bold text-3xl md:text-4xl tracking-tighter">Explore the Office types</h2>
+                <p class="font-medium text-gray-600 text-base md:text-lg">Unveiling Workplace Varieties
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="javascript:;" class="w-full h-72 relative rounded-2xl overflow-hidden hover:scale-105 duration-150">
+                    <div class="bg-gray-900/50 inset-0 absolute z-10 flex items-center justify-center text-white text-center font-semibold text-2xl md:text-3xl">Media Lounge</div>
+                    <img class="size-full object-cover" src="assets/images/explore/0004_Interior-new.webp" alt="interior"/>
+                </a>
+                <a href="javascript:;" class="w-full h-72 relative rounded-2xl overflow-hidden hover:scale-105 duration-150">
+                    <div class="bg-gray-900/50 inset-0 absolute z-10 flex items-center justify-center text-white text-center font-semibold text-2xl md:text-3xl">Common Desks</div>
+                    <img class="size-full object-cover" src="assets/images/explore/0003-interior.webp" alt="interior"/>
+                </a>
+                <a href="javascript:;" class="w-full h-72 relative rounded-2xl overflow-hidden hover:scale-105 duration-150">
+                    <div class="bg-gray-900/50 inset-0 absolute z-10 flex items-center justify-center text-white text-center font-semibold text-2xl md:text-3xl">Boardroom1</div>
+                    <img class="size-full object-cover" src="assets/images/explore/0004-interior.webp" alt="interior"/>
+                </a>
+                <a href="javascript:;" class="w-full h-72 relative rounded-2xl overflow-hidden hover:scale-105 duration-150">
+                    <div class="bg-gray-900/50 inset-0 absolute z-10 flex items-center justify-center text-white text-center font-semibold text-2xl md:text-3xl">Boardroom2</div>
+                    <img class="size-full object-cover" src="assets/images/explore/0006_Interior-new.webp" alt="interior"/>
+                </a>
+                <a href="javascript:;" class="w-full h-72 relative rounded-2xl overflow-hidden hover:scale-105 duration-150">
+                    <div class="bg-gray-900/50 inset-0 absolute z-10 flex items-center justify-center text-white text-center font-semibold text-2xl md:text-3xl">Podcast Room</div>
+                    <img class="size-full object-cover" src="assets/images/explore/0004_Interior-new.webp" alt="interior"/>
+                </a>
+                <a href="javascript:;" class="w-full h-72 relative rounded-2xl overflow-hidden hover:scale-105 duration-150">
+                    <div class="bg-gray-900/50 inset-0 absolute z-10 flex items-center justify-center text-white text-center font-semibold text-2xl md:text-3xl">Coffe Bar</div>
+                    <img class="size-full object-cover" src="assets/images/explore/0006-interior.webp" alt="interior"/>
+                </a>
+            </div>
+             
+    </section>
+
+    <section id="prices" class="py-12 md:py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col items-center text-center gap-2 md:gap-3 mb-8 md:mb-10">
+                <h2 class="font-bold text-3xl md:text-4xl tracking-tighter">Prices</h2>
+                <p class="font-medium text-gray-600 text-base md:text-lg">Exploring Plan Options and Costs
+                </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div class="ring-1 ring-gray-200 bg-white flex flex-col justify-between rounded-3xl p-6">
+                    <div>
+                      <p class="text-2xl font-bold tracking-tight text-gray-900">Entire office - Daily</p>
+                      <p class="mt-1 text-xl font-semibold leading-6 text-gray-600">AU$1,100 per day 8am - 7 pm</p>
+                      <a target="_blank" type="button" class="text-pink-600 ring-1 ring-inset ring-pink-200 hover:ring-pink-300 mt-6 block w-full rounded-full px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-500" href="javascript:;">Buy now</a>
+                      <ul class="mt-6 space-y-3 text-sm leading-6 text-gray-600 xl:mt-8" role="list">
+                        <p class="font-semibold pl-8">Access to</p>
+                        <li class="flex gap-x-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-green-600">
+                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                          </svg>Entire office for a team of 15-20
+                        </li>
+                        <li class="flex gap-x-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-green-600">
+                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                          </svg>25 desks spaces 
+                        </li>
+                        <li class="flex gap-x-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-green-600">
+                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                          </svg>1x board room 6 seater
+                        </li>
+                        <li class="flex gap-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-green-600">
+                              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                            </svg>1x boardroom 15 seater 
+                          </li>
+                          <li class="flex gap-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-green-600">
+                              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                            </svg>1x media lounge 
+                          </li>
+                          <li class="flex gap-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-green-600">
+                              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                            </svg>1x kitchen 
+                          </li>
+                          <li class="flex gap-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-green-600">
+                              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                            </svg>1x Coffee bar 
+                          </li>
+                          <li class="flex gap-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-green-600">
+                              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                            </svg>1x Podcast room 
+                          </li>
+                      </ul>
+                    </div>
+                    <p class="mt-8 text-center text-xs text-pink-600">Inclusions subject to change</p>
+                  </div>
+                  <div class="ring-2 ring-pink-600 bg-white flex flex-col justify-between rounded-3xl p-6">
+                    <div>
+                      <p class="text-2xl font-bold tracking-tight text-gray-900">Monthly Hire - 1 day a week </p>
+                      <p class="mt-1 text-xl font-semibold leading-6 text-gray-600">AU$3,990 x 4 days monthly </p>
+                      <a target="_blank" type="button" class="bg-pink-600 text-white shadow-sm hover:bg-pink-500 mt-6 block w-full rounded-full px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-500 duration-200" href="javascript:;">Buy now</a>
+                      <ul class="mt-6 space-y-3 text-sm leading-6 text-gray-600 xl:mt-8" role="list">
+                        <p class="font-semibold pl-8">Access to</p>
+                        <li class="flex gap-x-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-green-600">
+                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                          </svg>Entire office for a team of 15-20
+                        </li>
+                        <li class="flex gap-x-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-green-600">
+                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                          </svg>25 desks spaces 
+                        </li>
+                        <li class="flex gap-x-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-green-600">
+                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                          </svg>1x board room 6 seater
+                        </li>
+                        <li class="flex gap-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-green-600">
+                              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                            </svg>1x boardroom 15 seater 
+                          </li>
+                          <li class="flex gap-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-green-600">
+                              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                            </svg>1x media lounge 
+                          </li>
+                          <li class="flex gap-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-green-600">
+                              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                            </svg>1x kitchen 
+                          </li>
+                          <li class="flex gap-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-green-600">
+                              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                            </svg>1x Coffee bar 
+                          </li>
+                          <li class="flex gap-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-green-600">
+                              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                            </svg>1x Podcast room 
+                          </li>
+                      </ul>
+                    </div>
+                    <p class="mt-8 text-center text-xs text-pink-600">Inclusions subject to change</p>
+                  </div>
+                  <div class="ring-1 ring-gray-200 bg-white flex flex-col justify-between rounded-3xl p-6">
+                    <div>
+                      <p class="text-2xl font-bold tracking-tight text-gray-900">Podcast Room Hire</p>
+                      <p class="mt-1 text-xl font-semibold leading-6 text-gray-600">AU$100 p/h</p>
+                      <a target="_blank" type="button" class="text-pink-600 ring-1 ring-inset ring-pink-200 hover:ring-pink-300 duration-200 mt-6 block w-full rounded-full px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-500" href="javascript:;">Buy now</a>
+                      <ul class="mt-6 space-y-3 text-sm leading-6 text-gray-600 xl:mt-8" role="list">
+                        <p class="font-semibold pl-8">Access to</p>
+                        <li class="flex gap-x-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-green-600">
+                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                          </svg>Sound-treated podcast room
+                        </li>
+                        <li class="flex gap-x-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-5 flex-none text-green-600">
+                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                          </svg>Equipment for hire - Enquire 
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="mt-8 text-center text-xs text-pink-600">Inclusions subject to change</p>
+                  </div>            
+                </div>
+             
+    </section>
+
+
+    <section class="py-12 md:py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col items-center text-center gap-2 md:gap-3 mb-8 md:mb-10">
+                <h2 class="font-bold text-3xl md:text-4xl tracking-tighter">Explore the space</h2>
+                <p class="font-medium text-gray-600 text-base md:text-lg">
+                    Modern, friendly, cool, brutalist, and nice 
+                </p>
+            </div>
+            <div class="swiper w-full">
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col gap-6">
+                        <div class="w-full h-72">
+                            <img class="rounded-2xl size-full object-cover" src="assets/images/explore/0001-interior.webp" alt="interior"/>
+                        </div>
+                        <div class="w-full h-72">
+                            <img class="rounded-2xl size-full object-cover" src="assets/images/explore/0001_Interior-new.webp" alt="interior"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col gap-6">
+                        <div class="w-full h-72">
+                            <img class="rounded-2xl size-full object-cover" src="assets/images/explore/0002-interior.webp" alt="interior"/>
+                        </div>
+                        <div class="w-full h-72">
+                            <img class="rounded-2xl size-full object-cover" src="assets/images/explore/0002_Interior-new.webp" alt="interior"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col gap-6">
+                        <div class="w-full h-72">
+                            <img class="rounded-2xl size-full object-cover" src="assets/images/explore/0003_Interior-new.webp" alt="interior"/>
+                        </div>
+                        <div class="w-full h-72">
+                            <img class="rounded-2xl size-full object-cover" src="assets/images/explore/0003-interior.webp" alt="interior"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col gap-6">
+                        <div class="w-full h-72">
+                            <img class="rounded-2xl size-full object-cover" src="assets/images/explore/0004_Interior-new.webp" alt="interior"/>
+                        </div>
+                        <div class="w-full h-72">
+                            <img class="rounded-2xl size-full object-cover" src="assets/images/explore/0004-interior.webp" alt="interior"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col gap-6">
+                        <div class="w-full h-72">
+                            <img class="rounded-2xl size-full object-cover" src="assets/images/explore/0005_Interior-new.webp" alt="interior"/>
+                        </div>
+                        <div class="w-full h-72">
+                            <img class="rounded-2xl size-full object-cover" src="assets/images/explore/0005-interior.webp" alt="interior"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col gap-6">
+                        <div class="w-full h-72">
+                            <img class="rounded-2xl size-full object-cover" src="assets/images/explore/0006_Interior-new.webp" alt="interior"/>
+                        </div>
+                        <div class="w-full h-72">
+                            <img class="rounded-2xl size-full object-cover" src="assets/images/explore/0006-interior.webp" alt="interior"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col gap-6">
+                        <div class="w-full h-72">
+                            <img class="rounded-2xl size-full object-cover" src="assets/images/explore/0007_Interior-new.webp" alt="interior"/>
+                        </div>
+                        <div class="w-full h-72">
+                            <img class="rounded-2xl size-full object-cover" src="assets/images/explore/0007-interior.webp" alt="interior"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col gap-6">
+                        <div class="w-full h-72">
+                            <img class="rounded-2xl size-full object-cover" src="assets/images/explore/0008_Interior-new.webp" alt="interior"/>
+                        </div>
+                        <div class="w-full h-72">
+                            <img class="rounded-2xl size-full object-cover" src="assets/images/explore/0008-interior.webp" alt="interior"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-12 md:py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+                <div class="flex flex-col items-start gap-2 md:gap-3 mb-8 md:mb-10">
+                    <h2 class="font-bold text-3xl md:text-4xl text-white tracking-tighter">Get in Touch</h2>
+                    <p class="font-medium text-white/80 text-base md:text-lg">
+                        Reach Out to Us Today
+                    </p>
+                    <div class="mt-4 font-medium text-white/90 text-base md:text-base flex flex-col gap-3">
+                    <p><strong>Address: </strong>Suite 3.02 L3 159 High St Prahran 3181</p>
+                    <p><strong>Phone: </strong>(03) 9125 0022</p>
+                    <p><strong>Email: </strong>email@address.com</p>
+                </div>
+                    <a  href="https://maps.app.goo.gl/xpvRNLLc8Rs8Xwv77" class="inline-block mt-10 rounded-full bg-pink-600 px-8 py-4 text-center font-bold text-white transition hover:bg-pink-500">Get Directions</a>
+                </div>
+                
+                <div class="w-full rounded-3xl overflow-hidden shadow-2xl/10 bg-gray-200">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1774.5269624929451!2d144.99024611503515!3d-37.85123868942222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6683ac16b406d%3A0x198ef70033d19d54!2s159%20High%20St%2C%20Prahran%20VIC%203181%2C%20Australia!5e0!3m2!1sen!2sde!4v1718175508719!5m2!1sen!2sde" class="w-full h-72 md:h-[420px]" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+            
+            
+    </section>
+
+    <footer class="bg-white">
+        <div class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+          <div class="flex justify-center space-x-6 md:order-2">
+            <a class="text-gray-600 hover:text-gray-500" target="_blank" href="javascript:;">
+              <span class="sr-only">Facebook</span>
+              <svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" class="size-6 fill-current">
+                <path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a class="text-gray-600 hover:text-gray-500" target="_blank" href="javascript:;">
+              <span class="sr-only">Instagram</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24" class="size-6 fill-current">
+                <path d="M12 3c-2.444 0-2.75.01-3.71.054-.959.044-1.613.196-2.185.418A4.412 4.412 0 0 0 4.51 4.511c-.5.5-.809 1.002-1.039 1.594-.222.572-.374 1.226-.418 2.184C3.01 9.25 3 9.556 3 12s.01 2.75.054 3.71c.044.959.196 1.613.418 2.185.23.592.538 1.094 1.039 1.595.5.5 1.002.808 1.594 1.038.572.222 1.226.374 2.184.418C9.25 20.99 9.556 21 12 21s2.75-.01 3.71-.054c.959-.044 1.613-.196 2.185-.419a4.412 4.412 0 0 0 1.595-1.038c.5-.5.808-1.002 1.038-1.594.222-.572.374-1.226.418-2.184.044-.96.054-1.267.054-3.711s-.01-2.75-.054-3.71c-.044-.959-.196-1.613-.419-2.185A4.412 4.412 0 0 0 19.49 4.51c-.5-.5-1.002-.809-1.594-1.039-.572-.222-1.226-.374-2.184-.418C14.75 3.01 14.444 3 12 3Zm0 1.622c2.403 0 2.688.009 3.637.052.877.04 1.354.187 1.67.31.421.163.72.358 1.036.673.315.315.51.615.673 1.035.123.317.27.794.31 1.671.043.95.052 1.234.052 3.637s-.009 2.688-.052 3.637c-.04.877-.187 1.354-.31 1.67-.163.421-.358.72-.673 1.036a2.79 2.79 0 0 1-1.035.673c-.317.123-.794.27-1.671.31-.95.043-1.234.052-3.637.052s-2.688-.009-3.637-.052c-.877-.04-1.354-.187-1.67-.31a2.789 2.789 0 0 1-1.036-.673 2.79 2.79 0 0 1-.673-1.035c-.123-.317-.27-.794-.31-1.671-.043-.95-.052-1.234-.052-3.637s.009-2.688.052-3.637c.04-.877.187-1.354.31-1.67.163-.421.358-.72.673-1.036.315-.315.615-.51 1.035-.673.317-.123.794-.27 1.671-.31.95-.043 1.234-.052 3.637-.052Z"></path>
+                <path d="M12 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-7.622a4.622 4.622 0 1 0 0 9.244 4.622 4.622 0 0 0 0-9.244Zm5.884-.182a1.08 1.08 0 1 1-2.16 0 1.08 1.08 0 0 1 2.16 0Z"></path>
+              </svg>
+            </a>
+            <a class="text-gray-600 hover:text-gray-500" target="_blank" href="javascript:;">
+              <span class="sr-only">X</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24" class="size-6 fill-current">
+                <path d="M13.3174 10.7749L19.1457 4H17.7646L12.7039 9.88256L8.66193 4H4L10.1122 12.8955L4 20H5.38119L10.7254 13.7878L14.994 20H19.656L13.3171 10.7749H13.3174ZM11.4257 12.9738L10.8064 12.0881L5.87886 5.03974H8.00029L11.9769 10.728L12.5962 11.6137L17.7652 19.0075H15.6438L11.4257 12.9742V12.9738Z"></path>
+              </svg>
+            </a>
+            <a class="text-gray-600 hover:text-gray-500" target="_blank" href="javascript:;">
+              <span class="sr-only">YouTube</span>
+              <svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" class="size-6 fill-current">
+                <path clip-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" fill-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="mt-8 md:order-1 md:mt-0">
+            <p class="text-center text-sm leading-5 text-gray-600">© 2024 Co-working. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+ 
+    
+</body>
+
+<!-- Apline JS -->
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+ 
+
+
+
+</html>
